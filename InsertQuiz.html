@@ -3,7 +3,11 @@
 
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <style>
+        body {
+            background-color: rgb(244, 243, 243);
+        }
+    </style>
     <h1>My Quiz</h1>
     <script>
         function insertQuiz() {
@@ -72,35 +76,38 @@
 
         }
     </script>
+</head>
 
-    <body>
-        <div id="d"></div>
-        <button onclick="getAll()" type="button" class="btn btn-primary">Get Results</button>
-        <center>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-5">
-                        <div class="form-floating mb-3">
-                            <label for="questionNo" class="form-label"></label>questionNo
-                            <input id="questionNo" type="text" class="form-control">
-                        </div>
-                        <br>
-                        <div class="form-floating mb-4">
-                            <label for="question" class="form-label"></label>question
-                            <input id="question" type="text" class="form-control">
-                        </div>
-                        <br>
-                        <div class="form-floating mb-4">
-                            <label for="ans" class="form-label"></label>answer
-                            <input id="ans" type="text" class="form-control">
-                        </div>
-                        <br>
-                        <button onclick="insertQuiz()" type="button" class="btn btn-primary">Submit</button>
 
-        </center>
-        </div>
-    </body>
-</head>>
+<body>
+    <div id="d"></div>
+    <button onclick="getAll()" type="button" class="btn btn-primary">Get Results</button>
+    <center>
+        <h1>Insert Quiz</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-5">
+                    <div class="form-floating mb-3">
+                        <label for="questionNo" class="form-label"></label>questionNo
+                        <input id="questionNo" type="text" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-floating mb-4">
+                        <label for="question" class="form-label"></label>question
+                        <input id="question" type="text" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-floating mb-4">
+                        <label for="ans" class="form-label"></label>answer
+                        <input id="ans" type="text" class="form-control">
+                    </div>
+                    <br>
+                    <button onclick="insertQuiz()" type="button" class="btn btn-primary">Submit</button>
+
+    </center>
+    </div>
+</body>
+
 
 </html>
